@@ -71,26 +71,40 @@ K-meansに比べて混雑時の群集抽出精度はすばらしく良い。精�
 要約
 #### 4. other important citations
 
+## 11/18 サーベイすべきリストをとりあえず列挙(読むのは11/19)
 
-## todo
+### CVPRに出ていた論文たち（内容まとめをする）
 
-Real-time crowd detection based on gradient magnitude entropy model
-Crowd detection in airborne images using spatial point statistics
+- pedestrian detection aided by deep learning semantic tasks/7
+- action recognition with trajectory pooled deep-convolutional descriptors/12
+- Deeply learned attributes for crowded scene understanding/1
+- cross-scene crowd counting via deep convolutional neural networks/4
+- taking a deeper look at pedestrians/11
+- Histograms of oriented gradients for human detection/12728??
 
-pedestrian detection aided by deep learning semantic tasks
-action recognition with trajectory pooled deep-convolutional descriptors
+###検索ワード　group detection crowd で関連しそうな話題（最近の＆impact大きそうなの中心）
 
-
-Deeply learned attributes for crowded scene understanding
-cross-scene crowd counting via deep convolutional neural networks
-taking a deeper look at pedestrians
-
-
-
-
-
-
-
+-　Dynamic phase and group detection in pedestrian crowd data using multiplex visibility graphs/0
+-　Sparse people group and crowd detection using spatial point statistics in airborne images/0
+-　Crowd Detection in Airborne Images using SpatialPoint Statistics/0
+- From Participatory Sensing to Mobile Crowd Sensing /37
+- Group Affiliation Detection Using Model Divergence for Wearable Devices/3
+- Pedestrian detection and tracking through hierarchical clustering/0
+- Profiling stationary crowd groups/2
+- L0 regularized stationary time estimation for crowd group analysis/5
+- Macroscopic analysis of crowd motion in video sequences/0
+- Crowd Fraud Detection in Internet Advertising/1
+- Crowd analysis in non-static cameras using feature tracking and multi-person density/0
+- Abnormal Crowd Behavior Detection using Social Force Mode/552
+- Automatically Detecting the Small Group Structure of a Crowd/63
+- Social Attribute-Aware Force Model: Exploiting Richness of Interaction for Abnormal Crowd Detection /4
+- Detection and Tracking of Shopping Groups in Stores /92
+- Reduced-Complexity Detection Algorithms for Systems Using Multi-Element Arrays /114
+- Group Detection for Synchronous Gaussian Code-Division Multiple-Access Channels /224
+- Crowd detection in video sequences/51
+- Crowd Detection with a Multiview Sampler/33
+- Crowd detection from still images/39
+- Real-time crowd detection based on gradient magnitude entropy model/0
 
 
 | title                                                                                | category           | publish yr | 1st author     | citation | summary | other impo. cit. |
