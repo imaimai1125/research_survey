@@ -3,7 +3,7 @@
 人流感知系論文たち
 引き続き傾向を探るために2014以降で。
 
-### テンプレ 
+### title of paper
 興味（☆☆☆☆☆）
 
 
@@ -15,8 +15,8 @@
 要約
 #### 4. other important citations
 
-*** 
-***
+***** 
+*****
 
 ## 1.Crowd Detection and Occupancy Estimation Through Indirect Environmental Measurements 
 ☆☆
@@ -31,7 +31,7 @@ EuCAP / 2014 / Federico Viani / 2
 
 
 *****
-
+*****
 
 ## 2.Unsupervised dense crowd detection by multiscale texture analysis
 ☆☆☆☆☆
@@ -44,32 +44,78 @@ Pattern Recognition Letters / Antoine Fagette / **4**
 事前確率なしの状態で人物を検出できるかどうかの研究。
 特徴量ベクトルを抽出してbinary classification。
 K-meansに比べて混雑時の群集抽出精度はすばらしく良い。精度競争。わりと使えるかも。
+
 #### 4. other important citations
 
 *****
 ****
-## 3.Crowd modeling framework using fast head detection and shape-aware matching
-興味（☆☆☆☆☆）
-
+## 3.Social Attribute-Aware Force Model: Exploiting Richness of Interaction for Abnormal Crowd Detection
+☆☆☆☆
 #### 1. category (rough)
-どういう種類の研究かざっくり
+画像処理, 異常検知
 #### 2. publisher/publish year / 1st author / # of citations
-出版元or学会/出版年/author/引用数
+Transactions on circuits and systems for video tech./2015/yanhao zhang/4
 #### 3. summary
-要約
+- abnormal crowd behaviorを見つけたい。ミクロとマクロ両方見ながら推定しちゃおう。
+- 歩行者たちは各歩行者の属性を検知しているはず。
+- social semantic influence on the crowd interaction behaviorsを考慮
+- social force と組み合わせるのはまだまだ現役感ある
+
 #### 4. other important citations
 
 ****
-## 4.Social Attribute-Aware Force Model: Exploiting Richness of Interaction for Abnormal Crowd Detection
-興味（☆☆☆☆☆）
-
+****
+## 4.cross-scene crowd counting via deep convolutional neural networks
+☆☆☆☆
 #### 1. category (rough)
-どういう種類の研究かざっくり
+画像処理, Deep learning
 #### 2. publisher/publish year / 1st author / # of citations
-出版元or学会/出版年/author/引用数
+CVPR/2015/Cong Zhang/4
 #### 3. summary
-要約
+- 特定の状況における精度を上げようという感じ。（crowd behaviorのひとつに着目）
+- 交差シーンはtrainingセットがイマイチ。変わりにcrowd densityとcrowd countという点からCNNを学習させる。
+	- 割と面白そうな画像がある。　アルゴリズムはかかれてない。
+
 #### 4. other important citations
+- [23][33] 群集行動を速度ベクトル場として表現するお話
+- [35] scalingのお話
+
+***
+***
+## 5.Abnormal Crowd Behavior Detection using Social Force Mode
+☆☆☆☆☆
+#### 1. category (rough)
+画像認識, Social Force Model
+#### 2. publisher/publish year / 1st author / # of citations
+CVPR/2009/Ramin Mehran/552
+#### 3. summary
+- ビデオを使ってsocial force modelを考慮し、異常行動を検出する。
+- 点をグリッド上に並べ、SFの流れ場みたいなのを作り、bag of wordsアプローチでフレームを分類する。
+- SFMを画像認識と組み合わせることで、集団のダイナミクスを高精度に捕らえられるようになった+精度もとても良かった
+- particle advection->social force ->bag of force -> anomaly detection
+- social forceのベクトルを可視化して解析する手法は割と昔からありそうな予感。。調べてみよう。
+#### 4. other important citations
+- インパクトの大きな論文だったようなので、もう少し調べたい。（被引用の詳細など）
+
+[17]social force model
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## 11/18 サーベイすべきリストをとりあえず列挙(読むのは11/19)
 
@@ -78,7 +124,6 @@ K-meansに比べて混雑時の群集抽出精度はすばらしく良い。精�
 - pedestrian detection aided by deep learning semantic tasks/7
 - action recognition with trajectory pooled deep-convolutional descriptors/12
 - Deeply learned attributes for crowded scene understanding/1
-- cross-scene crowd counting via deep convolutional neural networks/4
 - taking a deeper look at pedestrians/11
 - Histograms of oriented gradients for human detection/12728??
 
@@ -95,9 +140,7 @@ K-meansに比べて混雑時の群集抽出精度はすばらしく良い。精�
 - Macroscopic analysis of crowd motion in video sequences/0
 - Crowd Fraud Detection in Internet Advertising/1
 - Crowd analysis in non-static cameras using feature tracking and multi-person density/0
-- Abnormal Crowd Behavior Detection using Social Force Mode/552
 - Automatically Detecting the Small Group Structure of a Crowd/63
-- Social Attribute-Aware Force Model: Exploiting Richness of Interaction for Abnormal Crowd Detection /4
 - Detection and Tracking of Shopping Groups in Stores /92
 - Reduced-Complexity Detection Algorithms for Systems Using Multi-Element Arrays /114
 - Group Detection for Synchronous Gaussian Code-Division Multiple-Access Channels /224
@@ -107,7 +150,3 @@ K-meansに比べて混雑時の群集抽出精度はすばらしく良い。精�
 - Real-time crowd detection based on gradient magnitude entropy model/0
 
 
-| title                                                                                | category           | publish yr | 1st author     | citation | summary | other impo. cit. |
-| :-:                                                                                  | :-:                | :-:        | :-:            | :-:      | :-:     | :-:              |
-| Crowd Detection and Occupancy Estimation<bt> Through Indirect Environmental Measurements | 画像認識・人物認識 | 2014       | Federico Viani | 2        |     センサーを使ってhumidityと<br>temperatureの値から<br>そのフロアのoccupancyを推測する？みたいな    |                  |
-|                                                                                      |                    |            |                |          |         |                  |
