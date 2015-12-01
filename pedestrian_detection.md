@@ -3,16 +3,11 @@
 人流感知系論文たち
 引き続き傾向を探るために2014以降で。
 
-### title of paper
+## title of paper
 興味（☆☆☆☆☆）
-
-
 #### 1. category (rough)
-どういう種類の研究かざっくり
 #### 2. publisher/publish year / 1st author / # of citations
-出版元or学会/出版年/author/引用数
 #### 3. summary
-要約
 #### 4. other important citations
 
 ***** 
@@ -94,36 +89,61 @@ CVPR/2009/Ramin Mehran/552
 - SFMを画像認識と組み合わせることで、集団のダイナミクスを高精度に捕らえられるようになった+精度もとても良かった
 - particle advection->social force ->bag of force -> anomaly detection
 - social forceのベクトルを可視化して解析する手法は割と昔からありそうな予感。。調べてみよう。
+
 #### 4. other important citations
 - インパクトの大きな論文だったようなので、もう少し調べたい。（被引用の詳細など）
+- [17]social force model
 
-[17]social force model
+***
+***
+
+## 6.pedestrian detection aided by deep learning semantic tasks
+☆☆☆
+#### 1. category (rough)
+画像認識・人物検出
+#### 2. publisher/publish year / 1st author / # of citations
+CVPR/2015/Yonglong Tian/7
+#### 3. summary
+- 人物検出。人や景色は様々な種類があるため難しい。人の持つ特徴量（バッグを持っている、男・女）などを抽出することで
+より人物検出の上げようという試み。精度向上のためにはHaar,HOGなどの既存の特徴量を使うものもあるが、精度向上の最適化を行えるものではない。Deep learningを使った手法は特徴量を抽出してくれるが、二値分類しかされてないので歩行者のリッチなバリエーションに答えることは不可能だった。
+- TA-CNNという手法を考案し、複数の特徴・属性を同時に考えることが可能になった。それを使うことで、人物検出の精度が向上した。
+
+#### 4. other important citations
+[29] ConvNet : CNN for pedestrian detection
+[22] Ouyang : jointly learned features and the visibly of different body parts to handle occlusion.
+
+***
+***
+
+## 7. Deeply learned attributes for crowded scene understanding
+☆☆☆
+#### 1. category (rough)
+人流動画DB作成。属性付与
+#### 2. publisher/publish year / 1st author / # of citations
+CVPR/2015/Jing Shao/1
+#### 3. summary
+- What/ Where/ Whyを特徴量に持つ人流データセットを構築した。
+- multi-task learning deep modelを発展させた
+
+#### 4. other important citations
+
+***
+***
+
+## 8. Cross-scene Crowd Counting via Deep Convolutional Neural Networks
+#### 1. category (rough)
+#### 2. publisher/publish year / 1st author / # of citations
+#### 3. summary
+#### 4. other important citations
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## 11/18 サーベイすべきリストをとりあえず列挙(読むのは11/19)
+## 11/19 サーベイすべきリストをとりあえず列挙(読むのは11/30)
 
 ### CVPRに出ていた論文たち（内容まとめをする）
 
-- pedestrian detection aided by deep learning semantic tasks/7
 - action recognition with trajectory pooled deep-convolutional descriptors/12
-- Deeply learned attributes for crowded scene understanding/1
+- 
+-
 - taking a deeper look at pedestrians/11
 - Histograms of oriented gradients for human detection/12728??
 
